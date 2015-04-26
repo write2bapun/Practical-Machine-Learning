@@ -1,3 +1,22 @@
+Assignment Practical Machine Learning
+
+Programmer: Soumya Parija
+
+Environment: windows 8.1 and R Studio Version 0.98.1103
+
+Problem:
+
+Using devices such as Jawbone Up, Nike FuelBand, and Fitbit it is now possible to collect a large amount of data about personal activity relatively inexpensively. These type of devices are part of the quantified self movement – a group of enthusiasts who take measurements about themselves regularly to improve their health, to find patterns in their behavior, or because they are tech geeks. One thing that people regularly do is quantify how much of a particular activity they do, but they rarely quantify how well they do it. In this project, your goal will be to use data from accelerometers on the belt, forearm, arm, and dumbell of 6 participants. They were asked to perform barbell lifts correctly and incorrectly in 5 different ways. More information is available from the website here: http://groupware.les.inf.puc-rio.br/har (see the section on the Weight Lifting Exercise Dataset).
+
+Data :
+The training data for this project are available here: 
+https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv
+
+The test data are available here: 
+https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv
+
+The data for this project come from this source: http://groupware.les.inf.puc-rio.br/har. If you use the document you create for this class for any purpose please cite them as they have been very generous in allowing their data to be used for this kind of assignment.
+
 Solution:
 
 ProjDir < - "C:\Users\Soumya\Desktop\Practical Machine Learning"
@@ -87,7 +106,7 @@ Prediction A B C D E
  E 0 0 0 0 1082
  
  
-So our trained model is 99.4% accurate against our test set and this is confirmed by the confusion matrix. Let's use this super-accurate model to predict the unknown labels.
+So our trained model is 99.1% accurate against our test set and this is confirmed by the confusion matrix. Let's use this super-accurate model to predict the unknown labels.
  
 predict(model, newdata=Finalrawtest)
  
@@ -153,4 +172,5 @@ Prediction A B C D E
  C 0 17 1002 7 0
  D 0 0 18 945 1
  E 0 2 4 0 1076
+ 
  
